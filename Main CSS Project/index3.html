@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="nav">
+            <h1  class="logo">LEOS</h1>
+          <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="search" id="main-search" placeholder="search">
+                <div class="icon"><i class="fas fa-search"></i></div>
+            </div>
+            <div class="cart"><i class="fa-solid fa-bag-shopping"></i>0</div>
+            <div class="profile"><img src="./images/profile.jpeg" alt=""></div>
+            <button id="mode">
+                <i id="modebtn" class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    <div class="shopping-section">
+        <h1>Shopping Cart</h1>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td>
+                            <div class="quantity-controls">
+                                <span class="decrease-icon" title="Decrease quantity"></span>
+                                <span>10</span>
+                                <span class="increase-icon" title="Increase quantity"></span>
+                            </div>
+                        </td>
+                        <td>$15.00</td>
+                        <td><span class="remove-icon" title="Remove item"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>
+                            <div class="quantity-controls">
+                                <span class="decrease-icon" title="Decrease quantity"></span>
+                                <span>5</span>
+                                <span class="increase-icon" title="Increase quantity"></span>
+                            </div>
+                        </td>
+                        <td>$25.00</td>
+                        <td><span class="remove-icon" title="Remove item"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td>
+                            <div class="quantity-controls">
+                                <span class="decrease-icon" title="Decrease quantity"></span>
+                                <span>8</span>
+                                <span class="increase-icon" title="Increase quantity"></span>
+                            </div>
+                        </td>
+                        <td>$30.00</td>
+                        <td><span class="remove-icon" title="Remove item"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="container">
+            <div class="checkout-card">
+                <h3>Enter the Coupon Code</h3>
+                
+                <div class="coupon-section">
+                    <input type="text" id="coupon-code" placeholder="COUPON CODE">
+                    <button id="apply-coupon">Apply Coupon</button>
+                </div>
+                
+                <div class="price-details">
+                    <div class="price-item">
+                        <span class="price-label">Sub Total</span>
+                        <span class="price-amount">$100.00</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-label">Taxes(If applicable)</span>
+                        <span class="price-amount">$8.00</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-label">Discount</span>
+                        <span class="price-amount" id="discount-amount">-$0.00</span>
+                    </div>
+                    <div class="price-item total">
+                        <span class="price-label">Total</span>
+                        <span class="price-amount" id="total-amount">$108.00</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="extra-elements">
+                <button class="pay-now"><a href="index4.html">Pay Now</a></button>
+                <div class="razorpay-icons">
+                    <img src="./images/razor.png" alt="Razorpay" class="razorpay-icon">
+                    <img src="./images/gpay.png" alt="" class="gpay">
+                    <img src="./images/paytm.png" alt="" class="gpay">
+                </div>
+               
+            </div>
+        </div>
+        <p class="continue"><a href="index.html"><  Continue Shopping</a></p>
+    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
